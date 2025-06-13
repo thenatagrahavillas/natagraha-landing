@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The NataGraha Villa's</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f0fdf4;
+      color: #2f4f4f;
+    }
+
+    header {
+      background-image: url('https://source.unsplash.com/1600x600/?bali,villa');
+      background-size: cover;
+      background-position: center;
+      height: 90vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-shadow: 2px 2px 4px #000;
+      text-align: center;
+      padding: 0 1rem;
+    }
+
+    header h1 {
+      font-size: 4em;
+      margin: 0;
+    }
+
+    section {
+      padding: 4rem 2rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .intro {
+      text-align: center;
+    }
+
+    .features {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      justify-content: center;
+      margin-top: 2rem;
+    }
+
+    .feature {
+      flex: 1 1 300px;
+      background-color: #e6f4ea;
+      padding: 1.5rem;
+      border-radius: 1rem;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    }
+
+    .feature h3 {
+      margin-top: 0;
+    }
+
+    footer {
+      background-color: #2e7d32;
+      color: white;
+      text-align: center;
+      padding: 1.5rem;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 2rem;
+      padding: 1rem 2rem;
+      background-color: #388e3c;
+      color: white;
+      text-decoration: none;
+      border-radius: 0.5rem;
+    }
+    .btn:hover {
+      background-color: #2e7d32;
+    }
+
+    /* Responsive Styling */
+    @media (max-width: 768px) {
+      header {
+        height: 70vh;
+      }
+      header h1 {
+        font-size: 2.5em;
+      }
+      section {
+        padding: 2rem 1rem;
+      }
+      .feature {
+        padding: 1rem;
+      }
+    }
+
+    @media (max-width: 480px) {
+      header h1 {
+        font-size: 2em;
+      }
+      .btn {
+        padding: 0.75rem 1.5rem;
+        font-size: 0.9rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div>
+      <h1>The NataGraha Villa's</h1>
+      <p>Pesona Asri Bali di Tengah Alam Wonosobo</p>
+    </div>
+  </header>
+
+  <section class="intro">
+    <h2>Selamat Datang di Surga Tropis Anda</h2>
+    <p>Temukan ketenangan dan keindahan alam di The NataGraha Villa's — villa pribadi dengan nuansa Bali yang terletak di Wonosobo, cocok untuk pasangan maupun keluarga.</p>
+    <a href="https://wa.me/6281234567890" target="_blank" class="btn">Pesan via WhatsApp</a>
+  </section>
+
+  <section class="features">
+    <div class="feature">
+      <h3>Kolam Renang Pribadi</h3>
+      <p>Rasakan kesegaran di kolam renang pribadi yang menghadap ke pegunungan dan alam hijau.</p>
+    </div>
+    <div class="feature">
+      <h3>Desain Bernuansa Bali</h3>
+      <p>Interior villa dibuat dengan elemen kayu alami, ukiran khas Bali, dan atmosfer tropis yang menenangkan.</p>
+    </div>
+    <div class="feature">
+      <h3>Fasilitas Lengkap</h3>
+      <p>Wi-Fi gratis, sarapan pagi, dapur lengkap, dan tempat parkir luas untuk kenyamanan Anda.</p>
+    </div>
+  </section>
+
+  <section id="booking" class="intro">
+    <h2>Formulir Pemesanan</h2>
+    <form action="https://formspree.io/f/your-form-id" method="POST" style="max-width: 600px; margin: auto; text-align: left;">
+      <label>Nama Lengkap:<br><input type="text" name="name" required style="width: 100%; padding: 0.5rem; margin-bottom: 1rem;"></label>
+      <label>Email:<br><input type="email" name="email" required style="width: 100%; padding: 0.5rem; margin-bottom: 1rem;"></label>
+      <label>Tanggal Check-in:<br><input type="date" name="checkin" required style="width: 100%; padding: 0.5rem; margin-bottom: 1rem;"></label>
+      <label>Tanggal Check-out:<br><input type="date" name="checkout" required style="width: 100%; padding: 0.5rem; margin-bottom: 1rem;"></label>
+      <label>Pesan Tambahan:<br><textarea name="message" rows="4" style="width: 100%; padding: 0.5rem; margin-bottom: 1rem;"></textarea></label>
+      <button type="submit" class="btn">Kirim Permintaan</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 The NataGraha Villa's | Wonosobo - Indonesia</p>
+  </footer>
+</body>
+</html>

@@ -79,12 +79,14 @@
     .slide {
       display: none;
       width: 100%;
+      text-align: center;
     }
 
     .slide img {
-      width: 100%;
+      max-width: 100%;
       height: auto;
-      display: block;
+      max-height: 90vh;
+      object-fit: contain;
     }
 
     footer {
@@ -201,7 +203,7 @@
       slideIndex++;
       if (slideIndex > slides.length) {slideIndex = 1}
       slides[slideIndex-1].style.display = "block";
-      setTimeout(showSlides, 4000); // Ganti gambar setiap 4 detik
+      setTimeout(showSlides, 4000);
     }
   </script>
 </body>
